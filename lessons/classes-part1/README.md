@@ -421,7 +421,7 @@ What is the day (1-31): 4
 There are 107 days until your birthday!
 ```
 
-#### The Calendar API
+### The Calendar API
 
 Part of this assignment is to have you starting to get comfortable reading API documentation. [Here](http://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html) is the documentation for `Calendar`. Read the API to see what methods are available to you. To get you started, here's an example method call after creating a `Calendar`:
 
@@ -439,4 +439,80 @@ calendar.get(Calendar.YEAR);
 - Use [WolframAlpha](http://www.wolframalpha.com/) to check your answers.
 
 #### Bonus
-- 2015 isn't a leap year, but what if it was? Could you handle it? First read the [algorithm](http://en.wikipedia.org/wiki/Leap_year#Algorithm) on Wikipedia; if that's too complicated, see if the [GregorianCalendar](http://docs.oracle.com/javase/7/docs/api/java/util/GregorianCalendar.html) API can help you.
+- 2016 isn't a leap year, but what if it was? Could you handle it? First read the [algorithm](http://en.wikipedia.org/wiki/Leap_year#Algorithm) on Wikipedia; if that's too complicated, see if the [GregorianCalendar](http://docs.oracle.com/javase/7/docs/api/java/util/GregorianCalendar.html) API can help you.
+
+### Custom Os
+In this assignment we are going to build and use a miniature operating system. Our
+operating system will allow programs to run that meet our specifications. We
+will offer host programs a limited set of commands, and programs will have to
+implement interfaces we define.
+
+The commands we will offer are:
+
+```java
+public enum SystemCommands{
+  READ_INPUT, // Read a single integer from input 0 - 9
+  PRINT, // Print out a string
+  ADD, // Add two integers
+  MULTIPLY // Multiply two integers
+}
+```
+
+The programs we run will have to have at least one function
+```java
+SystemCommands getNextCommand();
+```
+
+This is the only way for our programs to interface with the operating system,
+and will be the function you implement.
+
+Your job will be to write the following programs:
+
+-Add any two numbers from input
+-Add two numbers from input, then add another two numbers from input, then
+multiply the two results
+-Read numbers from input until you read a 0. Add all numbers and print the
+result
+
+To accomplish this, you will need to understand how the operating system
+interacts with the computer.
+
+The operating system has enough space for remember only two values. The
+following diagram represents two empty memory locations. Memory starts with
+default value 0:
+[ 0 ] [ 0 ]
+
+#### READ_INPUT
+READ_INPUT will push a value into the first memory input.
+[ 9 ] [ 0 ]
+
+Another READ_INPUT will push the first memory value into the second location,
+and push the new value into the first location
+[ 8 ] [ 9 ]
+
+Another READ_INPUT and the second memory location value is lost, being
+overwritten by the value in the first location.
+[ 7 ] [ 8 ]
+
+#### PRINT
+PRINT will print out the value of the first memory location.
+// MEMORY contains [ 3 ] [ 5 ]
+PRINT // outputs 3
+
+#### ADD
+ADD adds the values in both memory locations, stores the value in the first,
+and sets the second location to 0
+// MEMORY contains [ 3 ] [ 4 ]
+ADD
+// MEMORY contains [ 7 ] [ 0 ]
+
+#### MULTIPLY
+MULTIPLY multiplies the values in both memory locations, stores the value in the
+first, and sets the second location to 0
+// MEMORY contains [ 3 ] [ 4 ]
+MULTIPLY
+// MEMORY contains [ 12 ] [ 0 ]
+
+#### Assignment
+For each problem, write a class with a single function getNextCommand() that
+solves the task.
