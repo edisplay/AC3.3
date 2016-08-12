@@ -106,7 +106,7 @@ System.out.println("Queens!".charAt(3)); // e
 ```
 
 
-> **In-class assignment:** [String exercise](string-loops.md)
+> **In-class assignment:** [String exercise](exercises/string-loops.md)
 
 
 
