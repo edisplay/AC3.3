@@ -20,7 +20,7 @@ Loops are another power control structure, and a great way for your program to d
 A for loop has three important components that help determine how many times it will loop.
 
 - Initialization
-- Termination/Condition 
+- Termination/Condition
 - Increment
 
 ```java
@@ -50,7 +50,6 @@ All loops have a body, and any code within the body of your loop will run howeve
 - You may also need to add an if-statement to the body of your loop.
 
 
->Exercise:**: Use a for-loop to write a program that prompts a user for 10 out of 50 U.S. states. 
 
 
 The hardest part about `for` loops is properly stopping the loop. Programmers often make mistakes when setting the termination condition for a loop. In particular, we are often off-by-one. This kind of bug it so common, it has its own [Wikipedia page](http://en.wikipedia.org/wiki/Off-by-one_error).
@@ -63,6 +62,8 @@ The hardest part about `for` loops is properly stopping the loop. Programmers of
 > **Exercise:** [harder] [Counting Machine Revisited](http://programmingbydoing.com/a/counting-machine-revisited.html): Now let the user input the initial value, the max value, and the increment.
 
 > **Exercise:** "FizzBuzz" is a very famous program, up there with "Hello World!". Write [FizzBuzz](http://programmingbydoing.com/a/fizzbuzz.html) using a `for` loop.
+
+
 
 `break` and `continue`
 =
@@ -104,6 +105,11 @@ The function `String.charAt()` returns the `char` at the index provided. For exa
 System.out.println("Queens!".charAt(3)); // e
 ```
 
+
+> **In-class assignment:** [String exercise](string-loops.md)
+
+
+
 > **In-class assignment:** [hard] Below is a quote from [Grace Hopper](http://en.wikipedia.org/wiki/Grace_Hopper), the inventor of the first compiler. Write a program that uses a `for` loop to count how many times she says the word "data". You'll need to call two `String` functions in order to complete this assignment. Make sure to verify your answer.
 
 > > "We must include in any language with which we hope to describe complex **data**-processing situations the capability for describing **data**. We must also include a mechanism for determining the priorities to be applied to the **data**. These priorities are not fixed and are indicated in many cases by the **data**.
@@ -111,3 +117,5 @@ System.out.println("Queens!".charAt(3)); // e
 > > "Thus we must have a language and a structure that will take care of the **data** descriptions and priorities, as well as the operations we wish to perform. If we think seriously about these problems, we find that we cannot work with procedures alone, since they are sequential. We need to define the problem instead of the procedures. The Language Structures Group of the Codasyl Committee has been studying the structure of languages that can be used to describe **data**-processing problems. The Group started out by trying to design a language for stating procedures, but soon discovered that what was really required was a description of the **data** and a statement of the relationships between the **data** sets. The Group has since begun writing an algebra of processes, the background for a theory of **data** processing.
 
 > > "Clearly, we must break away from the sequential and not limit the computers. We must state definitions and provide for priorities and descriptions of **data**. We must state relationships, not procedures."
+
+### [Exit Ticket](http://bit.ly/2aFLSKE)
