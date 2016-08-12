@@ -123,6 +123,15 @@ if(requestCode == DOWNLOAD_IMAGES_REQUEST && resultCode == RESULT_OK{
     }
 ```
 
+
+```java
+public boolean isPalindrome(String input){
+    String reversed = input.reversed();
+    return reversed.equals(input);
+;}
+
+
+
 [Exercise 1](if-OOps.md)
 
 ## Switch statement
@@ -243,6 +252,9 @@ if (input == 1) {
 
 Notice how the default case could not be translated to an else block of code
 without an expression guarding its execution.
+
+
+
 
 [Exercise 2](user_validation.md)
 
