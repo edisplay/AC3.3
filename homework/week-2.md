@@ -58,4 +58,6 @@ Example:
 
 ## Homework submission
 
-// TODO: add instructions for IntelliJ project configuration and homework submission via git.
+1. Create a package in your ~/Desktop/accesscode directory (like we did today) called HW_09-03. Run through the Git workflow like we did earlier today: [Git + IntelliJ workflow](../resources/git-intellij-workflow.md). Create the GitHub repo but DON'T DELETE IT AND RE-CLONE IT. That was just an exercise.
+
+2. Submit a link to the repo as a comment on [this issue](//TODO issue link pending) issue by **Saturday 9/03 at 8pm**. See the issue for more precise formatting instructions.

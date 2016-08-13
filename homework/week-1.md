@@ -201,7 +201,7 @@ Okay! A vanilla ice cream with 2 toppings. Your total is $2.99 and your ice crea
 
 ## Homework submission
 
-You can use [repl.it](https://repl.it/languages/java) to complete and submit these exercises.
+You can use [repl.it](https://repl.it/languages/java) to complete and submit the exercises.
 
 1. If you haven't already, create an account on repl.it ***using your github account***.
 
@@ -211,4 +211,4 @@ You can use [repl.it](https://repl.it/languages/java) to complete and submit the
 
 4. When you have completed all of the exercises, click the "Share" button then select Github to share the exercises to a Gist. 
 
-5. Copy the Gist URL and [submit it using this form](//TODO add hw submission form link) by ***midnight on Saturday*** (12:00am on 8/21/16).
+5. Copy the Gist URL and [submit it using this form](//TODO add hw submission form link) by ***Saturday 8/21 at 8pm***.
